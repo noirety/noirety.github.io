@@ -1,0 +1,345 @@
+/* head开始 */
+header {
+    width: 100%;
+    background-color: #8c0000;
+    
+}
+.header {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+    background-image: url(../images/head-bg1.png);
+}
+.header .logo {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    background-image: url(../images/logo.png);
+    background-size: cover;
+}
+.header h1 {
+    display: block;
+    float: left;
+    font-size: 48px;
+    line-height: 100px;
+    margin-left: 40px;
+    color: #fcfcfc;
+    font-family: STXingkai
+    /* STKaiti */
+}
+.header p {
+    display: block;
+    float: left;
+    font-size: 26px;
+    line-height: 100px;
+    margin-left: 40px;
+    color: #fcfcfc;
+    font-family: STXingkai
+    /* STKaiti */
+}
+.header .logo:hover {
+    animation: rotate 3s ease 1;
+}
+@keyframes rotate {
+    from {
+         transform: rotateZ(0deg);
+    }
+
+    to {
+      transform: rotateZ(360deg);
+    }
+}
+nav {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 40px;
+   
+}
+.nav {
+    width: 1280px;
+    height: 40px;
+    margin: 0 auto;
+}
+nav .nav a {
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 32px;
+} 
+/* 
+head部分暂时结束
+考虑后期加的：
+1.头部固定并改变
+2.导航栏可以下拉翻转
+3.hover效果需要再制作
+*/
+/* footer部分开始 */
+footer {
+    width: 100%;
+    background-color: #8c0000;
+}
+.footer {
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fcfcfc;
+}
+.footer a {
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 20px;
+    color: #fcfcfc;
+
+}
+/* footer部分暂时结束 */
+/* activity部分，暂定 */
+section {
+    width: 100%;
+}
+section .activity {
+    width: 1000px;
+    padding: 0 140px 20px 140px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: pink; */
+}
+.activity .hd-ac {
+	width: 1000px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+section .activity .hd-ac ul {
+    width: 5000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.activity .hd-ac li {
+    float: left;
+}
+.activity .hd-ac li img {
+	width: 1000px;
+    height: 500px;
+}
+.activity .hd-detail ol {
+    position: absolute;
+    margin-top: 10px;
+    left: 640px;
+    margin-left: -60px;
+    bottom: 30px;
+}
+.activity .hd-detail ol li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+	border: 2px solid #EDEBED;
+	border-radius: 50%;
+    margin-left: 10px;
+	cursor: pointer;
+}
+.activity .hd-detail ol li:hover {
+	background-color: #ff461f;
+}
+.activity .hd-detail ol li.current {
+    background-color: #8c0000;
+}
+/* activity部分结束 */
+/* 最新活动动态 */
+.hot {
+    width: 1280px;
+    margin: 0 auto;
+    /* background-color: red; */
+    position: relative;
+}
+.hot .title {
+    width: 1280px;
+    height: 60px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 40px;
+}
+.hot .title .font {
+    float: left;
+    width: 170px;
+    height: 60px;
+    background-color: #fff;
+    text-align:center;
+    margin: 20px 0 0 556px;
+    
+}
+.hot .title .font h1{
+    font-size: 36px;
+    font-family: STKaiTi;
+}
+.hot .title .font p {
+    font-size: 14px;
+    color: #666;
+    font-family: KaiTi;
+    margin-top: -6px;
+}
+
+.hot .act1 {
+    width: 390px;
+    height: 500px;
+    background-color: #E4E7EA;
+    float: left;
+    margin-top: 100px;
+}
+.hot .act2 {
+    width: 500px;
+    height: 560px;
+    background-color: #f2f2f2;
+    float: left;
+    margin-top: 40px;
+}
+.hot .act3 {
+    width: 390px;
+    height: 500px;
+    background-color: #E4E7EA;
+    float: right;
+    margin-top: 100px;
+}
+.hot div[class^=act] h1 {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    margin: 20px 0;
+}
+.hot div[class^=act] img {
+    display: block;
+    margin: 0 auto;
+}
+.hot div[class^=act] p {
+    display: block;
+    font-size: 16px;
+    width: 360px;
+    margin: 40px auto;
+    text-indent: 2em;
+}
+/* 最新活动动态 
+f2f2f3
+*/
+
+/*更多精彩部分*/
+.more {
+    width: 1280px;
+    margin: 20px auto;
+    /* background-color: red; */
+    position: relative;
+}
+.more .title {
+    width: 1280px;
+    height: 60px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 80px;
+}
+.more .title .font {
+    float: left;
+    width: 170px;
+    height: 60px;
+    background-color: #fff;
+    text-align:center;
+    margin: 20px 0 0 556px;
+    
+}
+.more .title .font h1{
+    font-size: 36px;
+    font-family: STKaiTi;
+}
+.more .title .font p {
+    font-size: 14px;
+    color: #666;
+    font-family: KaiTi;
+    margin-top: -6px;
+}
+.more .future {
+    float: left;
+    margin-left: 95px;
+    width: 300px;
+    height: 380px;
+    
+    transition-duration: .5s;
+}
+.more .future img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 50px; 
+}
+.more div:nth-child(2) {
+    background-color: #9CB6A8;
+}
+.more div:nth-child(3) {
+    background-color: #DCE0C3;
+}
+.more div:nth-child(4) {
+    background-color: #BCD0B3;
+}
+.more div:nth-child(3) a {
+    color: #333;
+}
+.more div:nth-child(3) a:hover {
+    text-decoration: none; 
+}
+.more .future p {
+    display: block;
+    font-size: 16px;
+    width: 210px;
+    margin: 0 auto;
+    /* text-indent: 2em; */
+}
+.more .future:hover {
+    transform:translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+}
+/*更多精彩部分*/
+/* jionus部分 */
+.jionus {
+    width: 1280px;
+    margin: 20px auto;
+    /* background-color: red; */
+    position: relative;
+}
+.jionus .title {
+    width: 1280px;
+    height: 60px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 80px;
+}
+.jionus .title .font {
+    float: left;
+    width: 170px;
+    height: 60px;
+    background-color: #fff;
+    text-align:center;
+    margin: 20px 0 0 556px;
+    
+}
+.jionus .title .font h1{
+    font-size: 36px;
+    font-family: STKaiTi;
+}
+.jionus .title .font p {
+    font-size: 14px;
+    color: #666;
+    font-family: KaiTi;
+    margin-top: -6px;
+}
+.jionus .group {
+    float: left;
+    margin-left: 210px;
+    width: 324px;
+    height: 500px;
+    background-color: #e9e9e9;
+}
+.jionus .group p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 56px;
+}
+/* jionus部分 */
