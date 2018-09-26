@@ -1,6 +1,6 @@
 var box=my$("box");
 var screen=box.children[0];
-var imgWidth=1000;
+var imgWidth=1200;
 var ulObj=screen.children[0];
 var list=ulObj.children;
 var olObj=box.children[1].children[0];

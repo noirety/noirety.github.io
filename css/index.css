@@ -7,37 +7,30 @@ header {
 .header {
     width: 1280px;
     margin: 0 auto;
-    height: 100px;
-    background-image: url(../images/head-bg1.png);
+    height: 160px;
+    background-image: url(../images/head-bg.jpg);
+    color: #fcfcfc;
+    font-family: "Helvetica Neue", Helvetica, "KaiTi", "楷体", "STKaiti", "华文楷体", serif!important
+}
+.font {
+    font-family: "Helvetica Neue", Helvetica, "KaiTi", "楷体", "STKaiti", "华文楷体", serif!important
 }
 .header .logo {
     display: block;
     float: left;
-    width: 100px;
-    height: 100px;
-    /* background-color: green; */
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-right: 40px;
     background-image: url(../images/logo.png);
     background-size: cover;
 }
 .header h1 {
-    display: block;
-    float: left;
     font-size: 48px;
     line-height: 100px;
-    margin-left: 40px;
-    color: #fcfcfc;
-    font-family: STXingkai
-    /* STKaiti */
 }
 .header p {
-    display: block;
-    float: left;
     font-size: 26px;
-    line-height: 100px;
-    margin-left: 40px;
-    color: #fcfcfc;
-    font-family: STXingkai
-    /* STKaiti */
 }
 .header .logo:hover {
     animation: rotate 3s ease 1;
@@ -53,21 +46,20 @@ header {
 }
 nav {
     width: 100%;
+    border-bottom: #8c0000 solid 2px;
     background-color: #f2f2f2;
-    height: 40px;
-   
 }
 .nav {
     width: 1280px;
-    height: 40px;
+    height: 60px;
     margin: 0 auto;
 }
 nav .nav a {
     display: inline-block;
     color: #333;
-    font-size: 20px;
-    line-height: 40px;
-    margin: 0 32px;
+    font-size: 26px;
+    line-height: 60px;
+    margin: 0 74px;
 } 
 /* 
 head部分暂时结束
@@ -78,6 +70,7 @@ head部分暂时结束
 */
 /* footer部分开始 */
 footer {
+    margin-top: 80px;
     width: 100%;
     background-color: #8c0000;
 }
@@ -87,6 +80,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     color: #fcfcfc;
+    background-color: #8c0000;
 }
 .footer a {
     display: inline-block;
@@ -101,20 +95,18 @@ section {
     width: 100%;
 }
 section .activity {
-    width: 1000px;
-    padding: 0 140px 20px 140px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto 20px;
     position: relative;
-    /* background-color: pink; */
 }
 .activity .hd-ac {
-	width: 1000px;
-	height: 500px;
+	width: 1200px;
+	height: 520px;
 	overflow: hidden;
 	position: relative;
 }
 section .activity .hd-ac ul {
-    width: 5000px;
+    width: 6000px;
     position: absolute;
     left: 0;
     top: 0;
@@ -123,15 +115,14 @@ section .activity .hd-ac ul {
     float: left;
 }
 .activity .hd-ac li img {
-	width: 1000px;
-    height: 500px;
+	width: 1200px;
+    height: 520px;
 }
 .activity .hd-detail ol {
     position: absolute;
-    margin-top: 10px;
-    left: 640px;
+    left: 600px;
     margin-left: -60px;
-    bottom: 30px;
+    bottom: 10px;
 }
 .activity .hd-detail ol li {
     float: left;
@@ -154,32 +145,28 @@ section .activity .hd-ac ul {
 .hot {
     width: 1280px;
     margin: 0 auto;
-    /* background-color: red; */
     position: relative;
 }
 .hot .title {
     width: 1280px;
     height: 60px;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #ed5b46;
     margin-bottom: 40px;
 }
 .hot .title .font {
     float: left;
     width: 170px;
     height: 60px;
+    color: #ed5b46;
     background-color: #fff;
     text-align:center;
     margin: 20px 0 0 556px;
-    
 }
 .hot .title .font h1{
     font-size: 36px;
-    font-family: STKaiTi;
 }
 .hot .title .font p {
     font-size: 14px;
-    color: #666;
-    font-family: KaiTi;
     margin-top: -6px;
 }
 
@@ -235,7 +222,7 @@ f2f2f3
 .more .title {
     width: 1280px;
     height: 60px;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #577160;
     margin-bottom: 80px;
 }
 .more .title .font {
@@ -245,16 +232,13 @@ f2f2f3
     background-color: #fff;
     text-align:center;
     margin: 20px 0 0 556px;
-    
+    color: #577160;
 }
 .more .title .font h1{
     font-size: 36px;
-    font-family: STKaiTi;
 }
 .more .title .font p {
     font-size: 14px;
-    color: #666;
-    font-family: KaiTi;
     margin-top: -6px;
 }
 .more .future {
@@ -301,14 +285,15 @@ f2f2f3
 /* jionus部分 */
 .jionus {
     width: 1280px;
-    margin: 80px auto;
+    margin: 0 auto;
+    margin-top: 80px;
     /* background-color: red; */
     position: relative;
 }
 .jionus .title {
     width: 1280px;
     height: 60px;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #FC9E68;
     margin-bottom: 80px;
 }
 .jionus .title .font {
@@ -318,16 +303,13 @@ f2f2f3
     background-color: #fff;
     text-align:center;
     margin: 20px 0 0 556px;
-    
+    color: #FC9E68;
 }
 .jionus .title .font h1{
     font-size: 36px;
-    font-family: STKaiTi;
 }
 .jionus .title .font p {
     font-size: 14px;
-    color: #666;
-    font-family: KaiTi;
     margin-top: -6px;
 }
 .jionus .group {
